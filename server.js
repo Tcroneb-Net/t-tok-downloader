@@ -18,7 +18,7 @@ staticPath = __dirname;
 app.use(express.static(staticPath));
 //make index page express
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/public');
     visitorCounter++;
     console.log('visits on current runtime : '+visitorCounter);
     console.log('uses on current runtime : '+usesCounter);
